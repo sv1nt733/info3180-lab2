@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+{% extends "base.html" %}
+{% block main %}
+
+<div class="profile">
+    <header>
+        <div class="top">
+            <img src="{{url_for('static', filename='css/avatar.png')}}">
+            <h1>Dillon Waugh</h1>
+            <div class="details">
+                <h2>@dillonwaugh</h2>
+                <h2>Manchester, Jamaica</h2>
+                <h2>{{dj}}</h2>
+            </div>
+        </div> 
+
+        <div class="bio">
+            <p>Hi there! I'm Dillon, a Mandeville-born final year Computer Science major at the University of the West Indies Mona.<br>
+            I am an avid analog and digital photography enthusiast and a few of my other hobbies include: music production, DIY projects,<br>
+            simulator racing, watching anime, reading manga and cooking.
+            </p>
+        </div>
+    </header>
+    <div class="flex-container">
+        <div class = "d1">7 </div>
+        <div class = "d2">100</div>
+        <div class = "d3">250</div>
+    </div>
+    <div class="flex-container-2">
+        <div class = "d4">Posts</div>
+        <div class = "d5">Following</div>
+        <div class = "d6">Followers</div>
+    </div>
+    <div class= "btn">
+        <button> Follow </button>
+    </div>
+</div>
+</body>
+
+{% endblock %}
+</html>
